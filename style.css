@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    background:whitesmoke;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+    z-index: 100;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:green;
+    transition: 0.2s linear;
+}
+
+nav ul li a:hover{
+    color:mediumspringgreen;
+}
+
+.text-box{
+    margin-top: 7px;
+    max-width: 650px;
+}
+
+.text-box h1{
+    font-size: 45 px;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.text-box a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: green;
+    padding: 15px 40px;
+    font-size: 20px;
+    margin-top: 50px;
+    transition: 0.2s linear;
+}
+
+.text-box a:hover{
+    color: green;
+    background: #fff;
+}
+
+.user-box{
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 8%;
+    z-index: 1;
+}
+
+.user-box img{
+    display: block;
+    padding-top: 180px;
+    width: 500px;
+    margin-bottom: -205px;
+}
+
+.heading h1, h4{
+    text-align: center;
+    color: green;
+}
+
+.content{
+    background-color: whitesmoke;
+}
+
+table, th, td{
+    border: 15px solid whitesmoke;
+    border-collapse: collapse;
+}
+  
+table{
+    margin-top: 30px;
+}
+
+.collection{
+    margin: auto;
+    padding-left: 20%;
+}
+
+section{
+    height: 60vh;
+    width: 80vm;
+    background-blend-mode: multiply;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 2px;
+    align-items: center;
+    scroll-snap-align: start;
+    flex: none;
+    display: flex;
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 60vh;
+    width: 80vw;
+}
+
+.container section:nth-child(1){
+    background-color: gainsboro;
+    background-image: url(./Image/1factory.jpg);
+    background-size: cover;
+}
+
+.container section:nth-child(2){
+    background-color: none;
+    background-image: url(./Image/2increase.jpg);
+    background-size: cover;
+}
+
+.container section:nth-child(3){
+    background-color: none;
+    background-image: url(./Image/3times.jpg);
+    background-size: cover;
+}
+
+.container section:nth-child(4){
+    background-color: none;
+    background-image: url(./Image/4textilewaste.jpg);
+    background-size: cover;
+}
+
+.container section:nth-child(5){
+    background-color: none;
+    background-image: url(./Image/5worn.jpg);
+    background-size: cover;
+}
